@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSphere Fitness Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #f3faf5;
+            color: #064e3b;
+        }
+
+        .container {
+            max-width: 1450px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 35px;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 35px;
+            color: #065f46;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px #00000015;
+        }
+
+        .card img {
+            display: block;
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card p {
+            margin: 0;
+            padding: 12px 5px;
+            text-align: center;
+            color: white;
+            background: #047857;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /* Mobile phone preview */
+
+        .phone {
+            width: 280px;
+            padding: 12px;
+            border: 8px solid #202020;
+            border-radius: 40px;
+            background: white;
+            box-shadow: 0 8px 20px #00000025;
+        }
+
+        .screen {
+            border-radius: 25px;
+            overflow: hidden;
+            padding: 12px 5px;
+            background: #ffffff;
+        }
+
+        .phone h2 {
+            text-align: center;
+            font-size: 18px;
+            margin: 15px 0 20px;
+            color: #065f46;
+        }
+
+        .mobile-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .mobile-gallery .card img {
+            height: 90px;
+        }
+
+        .mobile-gallery .card p {
+            font-size: 10px;
+            padding: 8px 2px;
+        }
+
+        /* Responsive layout */
+
+        @media (max-width: 1000px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .phone {
+                margin: 25px auto;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .gallery {
+                gap: 12px;
+            }
+
+            .card img {
+                height: 120px;
+            }
+
+            .card p {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="main-content">
+
+        <h1>FITSPHERE FITNESS GALLERY</h1>
+
+        <div class="gallery">
+
+            <div class="card">
+                <img src="C:\Users\Bhuvaneshwari R\Downloads\yoga workout.png"
+                    alt="yoga workout">
+                <p>Yoga Workout</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\Bhuvaneshwari R\Downloads\fitness_training.png"
+                 alt="fitness training">
+                <p>Fitness Training</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\Bhuvaneshwari R\Downloads\stretching_exercise.png"
+                     alt="Stretching Exercise">
+                <p>Stretching Exercise</p>
+            </div>
+
+            <div class="card">
+                <img src="strength_workout.png"
+                     alt="Strength Workout">
+                <p>Strength Workout</p>
+            </div>
+
+            <div class="card">
+                <img src="cardio_training.png" alt="Cardio Training">
+                <p>Cardio Training</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\Bhuvaneshwari R\Downloads\workout_session.png" alt="Workout Session">
+                <p>Workout Session</p>
+            </div>
+
+            <div class="card">
+                <img src="personal_training.png"
+                     alt="Personal Training">
+                <p>Personal Training</p>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\Bhuvaneshwari R\Downloads\Gym eqipment.png" alt="Gym Equipment">
+                <p>Gym Equipment</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mobile phone preview -->
+
+    <div class="phone">
+        <div class="screen">
+
+            <h2>FITSPHERE<br>FITNESS GALLERY</h2>
+
+            <div class="mobile-gallery">
+
+                <div class="card">
+                    <img src="C:\Users\Bhuvaneshwari R\Downloads\yoga workout.png" alt="Yoga">
+                    <p>Yoga Workout</p>
+                </div>
+
+                <div class="card">
+                    <img src="fitness_training.png" alt="Training">
+                    <p>Fitness Training</p>
+                </div>
+
+                <div class="card">
+                    <img src="stretching_exercise.png" alt="Stretching">
+                    <p>Stretching</p>
+                </div>
+
+                <div class="card">
+                    <img src="strength_workout.png" alt="Strength">
+                    <p>Strength Workout</p>
+                </div>
+
+                <div class="card">
+                    <img src="cardio_training.png" alt="Cardio">
+                    <p>Cardio Training</p>
+                </div>
+
+                <div class="card">
+                    <img src="workout_session.png" alt="Workout">
+                    <p>Workout Session</p>
+                </div>
+
+                <div class="card">
+                    <img src="personal_training.png" alt="Personal Training">
+                    <p>Personal Training</p>
+                </div>
+
+                <div class="card">
+                    <img src="C:\Users\Bhuvaneshwari R\Downloads\Gym eqipment.png" alt="Equipment">
+                    <p>Gym Equipment</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
